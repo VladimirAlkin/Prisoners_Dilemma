@@ -1,0 +1,4 @@
+Cooperate,Cooperate,1
+Defect,Defect,5
+Cooperate,Defect,15
+Defect,Cooperate,0
