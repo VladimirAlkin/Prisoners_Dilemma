@@ -1,4 +1,4 @@
-Algorithm for choosing a stratgy for a Prisoner's dilemma 
+Algorithm for choosing a strategy for a Prisoner's dilemma 
 
 5 strategys  - 5 classes. 
 Allways cooperate*, allways defect**, random choise, tit for tat and tit for tat with 1% probality of choosing cooperate instead of defect
