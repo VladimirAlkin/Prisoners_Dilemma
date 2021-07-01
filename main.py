@@ -9,7 +9,7 @@ players_circle_2 = random.sample(players_circle_1,50) #choose 50 randon players
 players_circle_1 = [x for x in players_circle_1 if x not in players_circle_2] #delete 50 players from circle 1 to not repeat them
 random.shuffle(players_circle_1)
 
-counter = 0
+
 
 for r in range (0,70):
   random.shuffle(players_circle_1)
