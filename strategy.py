@@ -2,6 +2,11 @@ import random
 
 COOPERATE = "Cooperate"
 DEFECT = "Defect"
+SCORES = {} #dict with scores as valuse and strings of reactions as keys
+with open("config.txt", 'r') as conf:
+  for line in (conf.readlines()):
+    line = line.split(',')
+    SCORES[line[0]+line[1]] = int(line[2]) 
 
 
 class strategy_coop():
@@ -141,10 +146,5 @@ class strategy_tit_for_tat_rand():
 
 
 def cal_score(player_1_reaction, player_2_reaction):      
-  scores = {} #dict with scores as valuse and strings of reactions as keys
-  with open("config.txt", 'r') as conf:
-    for line in (conf.readlines()):
-      line = line.split(',')
-      scores[line[0]+line[1]] = int(line[2])  
 
-  return scores[player_1_reaction + player_2_reaction]
+  return SCORES[player_1_reaction + player_2_reaction]
